@@ -12,3 +12,16 @@ you usually checkout the from the latest commit of the current branch. So, `HEAD
 - eg. `git switch <branch-name>`
 - To create a new branch and switch to it in one command, you can use the `-c` option:
   - `git switch -c <new-branch-name>`
+
+5. To merge a feature branch into the main branch, you can use the command `git merge <feature-branch>` -m "Merge message". This will combine the changes from the feature branch into the main branch.
+
+* Two Types of Merge
+  - Fast-forward merge
+  - Three-way merge
+
+  - Fast-forward merge occurs when the main branch has not diverged from the feature branch or main branch doesn't have any commits after the divergence. In this case, Git simply moves the pointer of the main branch forward to the latest commit of the feature branch.
+
+  - Three-way merge occurs when the main branch has diverged from the feature branch, meaning both branches have new commits since they split. In this case, Git creates a new commit that combines the changes from both branches. 
+
+  Or Non fast forward merge occurs when the main branch has diverged from the feature branch, meaning both branches have new commits since they split. In this case, Git creates a new commit that combines the changes from both branches.
+
