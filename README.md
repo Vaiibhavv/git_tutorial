@@ -118,3 +118,15 @@ List the hashes separated by spaces: `git cherry-pick hash1 hash2 hash3`
 3. Make your changes and commit them: `git add .` and `git commit -m "commit message"`
 4. Push your changes back to GitHub: `git push origin <new-branch-name  >`
 5. Create a pull request on GitHub to merge your feature branch changes into the main branch.
+
+
+## what is the differecne between fork and clone in git? 
+
+Create a table to show the difference between fork and clone in git.
+| Feature | Fork | Clone |
+|---------|------|-------|
+| Definition | Creates a copy of a repository on your GitHub account | Creates a copy of a repository on your local machine |
+| Usage | Done on GitHub | Done using Git |
+| Purpose | To contribute to an existing repository or create your own version | To work locally on a repository |
+| Changes | Can be submitted as pull requests to the original repository | Cannot be merged with the original repository unless you are the collaborator or owner |
+| Command | Not applicable (done through GitHub interface) | `git clone <repository-url>` |
