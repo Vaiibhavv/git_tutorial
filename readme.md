@@ -95,3 +95,8 @@ List the hashes separated by spaces: `git cherry-pick hash1 hash2 hash3`
 - `git stash list` - List all stashed changes.
 - `git stash apply "stash@{n}"` - Apply the nth stashed changes to your working directory.
 - `git stash pop` - Apply the most recent stashed changes and remove them from the stash list.
+
+## Rename or change the local mastter branch to main
+- To rename the local master branch to main, you can use the following commands:
+1. Rename the local branch: `git branch -m master main`
+2. Push the renamed branch to the remote repository: `git push -u origin main`
