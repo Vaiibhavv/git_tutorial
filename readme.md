@@ -86,3 +86,12 @@ eg. Suppose you have a commit in a feature branch that fixes a bug, and you want
 `git cherry-pick hash1 hash2 hash3`
 
 List the hashes separated by spaces: `git cherry-pick hash1 hash2 hash3`
+
+### what is git stash?
+- The `git stash` command is used to temporarily save changes that are not yet ready to be committed. This allows you to switch branches or work on other tasks without losing your changes. When you are ready to continue working on your changes, you can apply the stashed changes back to your working directory.
+
+* below are the commands for git stash:
+- `git stash push -m "message"` - Stash the changes in your working directory and staging area. 
+- `git stash list` - List all stashed changes.
+- `git stash apply "stash@{n}"` - Apply the nth stashed changes to your working directory.
+- `git stash pop` - Apply the most recent stashed changes and remove them from the stash list.
