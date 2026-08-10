@@ -25,3 +25,8 @@ you usually checkout the from the latest commit of the current branch. So, `HEAD
 
   Or Non fast forward merge occurs when the main branch has diverged from the feature branch, meaning both branches have new commits since they split. In this case, Git creates a new commit that combines the changes from both branches.
 
+## Merge Conflicts
+- Merge conflicts occur when Git is unable to automatically resolve differences between two branches during a merge. This typically happens when changes have been made to the same lines of code in both branches. When a merge conflict occurs, Git will mark the conflicting files and require manual intervention to resolve the conflicts.
+
+- While resoling the conflicts, you can use the command `git status` to see which files have conflicts. You can then open the conflicting files in a text editor and look for the conflict markers (<<<<<<<, =======, >>>>>>>) to identify the conflicting changes. After resolving the conflicts, you can add the resolved files to the staging area using `git add <file>`, and then commit the changes with `git commit`.
+
