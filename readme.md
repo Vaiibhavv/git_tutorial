@@ -96,7 +96,15 @@ List the hashes separated by spaces: `git cherry-pick hash1 hash2 hash3`
 - `git stash apply "stash@{n}"` - Apply the nth stashed changes to your working directory.
 - `git stash pop` - Apply the most recent stashed changes and remove them from the stash list.
 
-## Rename or change the local mastter branch to main
+## Rename or change the local master branch to main
 - To rename the local master branch to main, you can use the following commands:
 1. Rename the local branch: `git branch -m master main`
 2. Push the renamed branch to the remote repository: `git push -u origin main`
+
+## Connect with local to Github
+- To connect your local Git repository to a remote repository on GitHub, you can use the following commands:
+1. Create a new repository on GitHub.
+2. Copy the repository URL (HTTPS or SSH).
+3. In your local repository, add the remote repository URL: `git remote add origin <repository-url>`
+4. Pull the latest changes from the remote repository (if any): `git pull origin main --allow-unrelated-histories`
+5. Push your local changes to the remote repository: `git push -u origin main`
