@@ -67,3 +67,22 @@ meanwhile some other changes have been made in the main branch, and i want to in
 
 - eg. Suppose in current branch i have made some changes and commited, but i dont want keep those changes, in this scenario  
 to go back to the previous commit, so i can use `git reset --hard HEAD~1` to reset my working directory and staging area to the previous commit.
+
+* What does `git reset` do?
+- The `git reset` command is used to undo changes in your Git repository. It can be used to unstage files, that are present in staging area but not committed yet, or to move the `HEAD` pointer to a previous commit, effectively discarding changes made after that commit.
+- command- `git reset`
+
+## What does `git diff` do?
+- The `git diff` command is used to show the differences between files in your working directory and the staging area, or between the staging area and the last committed version of a file.
+
+- eg. command- `git diff`
+
+## What is Cherry-pick in git?
+- The `git cherry-pick` command is used to apply a specific commit from one branch onto another branch. This can be useful when you want to selectively apply changes from one branch to another without merging the entire branch.
+
+eg. Suppose you have a commit in a feature branch that fixes a bug, and you want to apply that specific commit to the main branch without merging the entire feature branch. You can use `git cherry-pick <commit-hash>` to apply that commit to the main branch.
+
+* Cherry-pick multiple individual commits:
+`git cherry-pick hash1 hash2 hash3`
+
+List the hashes separated by spaces: `git cherry-pick hash1 hash2 hash3`
