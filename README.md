@@ -108,3 +108,13 @@ List the hashes separated by spaces: `git cherry-pick hash1 hash2 hash3`
 3. In your local repository, add the remote repository URL: `git remote add origin <repository-url>`
 4. Pull the latest changes from the remote repository (if any): `git pull origin main --allow-unrelated-histories`
 5. Push your local changes to the remote repository: `git push -u origin main`
+
+
+## How to clone a repository from GitHub to your local machine and push your changes back to GitHub?
+- To clone a repository from GitHub to your local machine, you can use the following command
+1. `git clone <repository-url>`
+- This will create a local copy of the repository on your machine.
+2. create a new branch to work on your changes: `git switch -c <new-branch-name>`
+3. Make your changes and commit them: `git add .` and `git commit -m "commit message"`
+4. Push your changes back to GitHub: `git push origin <new-branch-name  >`
+5. Create a pull request on GitHub to merge your feature branch changes into the main branch.
